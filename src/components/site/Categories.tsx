@@ -38,7 +38,7 @@ export function Categories() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {cats.map((c, i) => (
             <a
               key={c.title}
@@ -53,8 +53,11 @@ export function Categories() {
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-leaf-deep/90 via-leaf-deep/30 to-transparent" />
+              <span className="absolute right-4 top-4 rounded-full bg-background/85 px-3 py-1 text-[11px] font-medium text-foreground backdrop-blur">
+                {c.price}
+              </span>
               <div className="absolute inset-x-0 bottom-0 p-6">
-                <div className="text-xs text-white/70">0{i + 1}</div>
+                <div className="text-xs text-white/70">{String(i + 1).padStart(2, "0")}</div>
                 <div className="mt-1 font-display text-2xl font-semibold text-white">
                   {c.title}
                 </div>
@@ -62,6 +65,29 @@ export function Categories() {
               </div>
             </a>
           ))}
+        </div>
+
+        <div className="mt-16">
+          <div className="text-center">
+            <span className="text-xs font-medium uppercase tracking-[0.2em] text-leaf">
+              Shop by budget
+            </span>
+            <h3 className="mt-3 font-display text-2xl font-semibold sm:text-3xl">
+              Something beautiful at every price.
+            </h3>
+          </div>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {priceBands.map((b) => (
+              <a
+                key={b.label}
+                href="#featured"
+                className="glass rounded-2xl p-6 transition-all hover:-translate-y-1 hover:shadow-soft"
+              >
+                <div className="font-display text-xl font-semibold text-primary">{b.label}</div>
+                <div className="mt-2 text-sm text-muted-foreground">{b.note}</div>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>
