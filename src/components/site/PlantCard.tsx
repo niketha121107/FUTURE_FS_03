@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 import type { Plant } from "@/lib/plants";
-import { waLink } from "@/lib/plants";
+import { waLink, formatPrice } from "@/lib/plants";
 
 export function PlantCard({ plant }: { plant: Plant }) {
   return (
@@ -21,7 +21,7 @@ export function PlantCard({ plant }: { plant: Plant }) {
         <div className="flex items-start justify-between gap-3">
           <h3 className="font-display text-xl font-semibold leading-tight">{plant.name}</h3>
           <div className="shrink-0 font-display text-lg font-semibold text-primary">
-            {plant.price}
+            {formatPrice(plant.price)}
           </div>
         </div>
         <p className="mt-3 flex-1 text-sm text-muted-foreground">{plant.description}</p>

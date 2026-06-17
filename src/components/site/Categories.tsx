@@ -2,12 +2,23 @@ import indoor from "@/assets/cat-indoor.jpg";
 import outdoor from "@/assets/cat-outdoor.jpg";
 import flowering from "@/assets/cat-flowering.jpg";
 import succulent from "@/assets/cat-succulent.jpg";
+import seeds from "@/assets/cat-seeds.jpg";
+import bulbs from "@/assets/cat-bulbs.jpg";
 
 const cats = [
-  { title: "Indoor Plants", desc: "Lush greens for sunlit corners", img: indoor },
-  { title: "Outdoor Plants", desc: "Balcony & patio statements", img: outdoor },
-  { title: "Flowering Plants", desc: "Soft blooms, lasting joy", img: flowering },
-  { title: "Succulents", desc: "Sculptural, low-effort beauty", img: succulent },
+  { title: "Indoor Plants", desc: "Lush greens for sunlit corners", img: indoor, price: "From ₹699" },
+  { title: "Outdoor Plants", desc: "Balcony & patio statements", img: outdoor, price: "From ₹549" },
+  { title: "Flowering Plants", desc: "Soft blooms, lasting joy", img: flowering, price: "From ₹899" },
+  { title: "Succulents", desc: "Sculptural, low-effort beauty", img: succulent, price: "From ₹399" },
+  { title: "Seeds", desc: "Heirloom packets to start your garden", img: seeds, price: "From ₹249" },
+  { title: "Bulbs", desc: "Spring & summer blooms in waiting", img: bulbs, price: "From ₹499" },
+];
+
+const priceBands = [
+  { label: "Under ₹100", note: "Starter packets & tiny treasures" },
+  { label: "₹100 – ₹500", note: "Everyday greens & seed kits" },
+  { label: "₹500 – ₹1000", note: "Statement houseplants" },
+  { label: "Above ₹1000", note: "Collector pieces & rare blooms" },
 ];
 
 export function Categories() {
