@@ -501,8 +501,8 @@ export const priceRanges = [
   { label: "Above ₹1000", min: 1000, max: Infinity },
 ] as const;
 
-export const WHATSAPP_NUMBER = "919999999999"; // +91 99999 99999
-export const PHONE_DISPLAY = "+91 99999 99999";
+export const WHATSAPP_NUMBER = "917708328839"; // +91 77083 28839
+export const PHONE_DISPLAY = "+91 77083 28839";
 
 export function formatPrice(value: number) {
   return `₹${value.toLocaleString("en-IN")}`;
