@@ -21,6 +21,26 @@ const tips = [
     title: "Prune & repot",
     desc: "Trim yellow leaves and refresh soil yearly. Your plants will thank you with new growth.",
   },
+  {
+    icon: Sun,
+    title: "Feed Monthly",
+    desc: "Use a balanced liquid fertilizer every 4–6 weeks during the growing season for lush foliage and stronger roots.",
+  },
+  {
+    icon: Droplets,
+    title: "Drainage First",
+    desc: "Always choose pots with drainage holes to prevent excess water from collecting around the roots.",
+  },
+  {
+    icon: Wind,
+    title: "Keep Leaves Clean",
+    desc: "Wipe dusty leaves gently with a damp cloth so your plants can absorb more light and stay vibrant.",
+  },
+  {
+    icon: Scissors,
+    title: "Watch for Pests",
+    desc: "Inspect leaves regularly for insects or discoloration. Early care keeps your plants healthy and thriving.",
+  },
 ];
 
 export function CareTips() {
@@ -46,9 +66,7 @@ export function CareTips() {
                 <span className="grid h-12 w-12 place-items-center rounded-2xl bg-primary text-primary-foreground">
                   <t.icon className="h-5 w-5" />
                 </span>
-                <span className="font-display text-sm text-muted-foreground">
-                  0{i + 1}
-                </span>
+                <span className="font-display text-sm text-muted-foreground">0{i + 1}</span>
               </div>
               <h3 className="mt-6 font-display text-xl font-semibold">{t.title}</h3>
               <p className="mt-2 text-sm text-muted-foreground">{t.desc}</p>

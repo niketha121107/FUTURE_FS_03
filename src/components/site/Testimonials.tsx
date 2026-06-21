@@ -2,18 +2,18 @@ import { Star } from "lucide-react";
 
 const reviews = [
   {
-    name: "Ananya Sharma",
-    role: "Bengaluru",
+    name: "Ananya",
+    role: "Coimbatore",
     text: "My Monstera arrived in perfect health and the care card was a beautiful touch. It feels like buying from a thoughtful friend, not a store.",
   },
   {
-    name: "Rohan Mehta",
-    role: "Mumbai",
+    name: "Joseph",
+    role: "Coimbatore",
     text: "The fiddle leaf fig is stunning — exactly as pictured. WhatsApp ordering was effortless and the team answered every question.",
   },
   {
-    name: "Priya Iyer",
-    role: "Pune",
+    name: "Priya",
+    role: "Trichy",
     text: "Three orders in and not one disappointment. Leaf & Bloom has quietly become my go-to for gifting plants.",
   },
 ];
@@ -33,10 +33,7 @@ export function Testimonials() {
 
         <div className="mt-16 grid gap-6 lg:grid-cols-3">
           {reviews.map((r) => (
-            <figure
-              key={r.name}
-              className="flex h-full flex-col rounded-3xl glass p-8 shadow-soft"
-            >
+            <figure key={r.name} className="flex h-full flex-col rounded-3xl glass p-8 shadow-soft">
               <div className="flex gap-1 text-accent">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star key={i} className="h-4 w-4 fill-current" />

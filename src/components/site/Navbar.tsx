@@ -3,6 +3,7 @@ import { Leaf, Menu, X } from "lucide-react";
 
 const links = [
   { href: "#about", label: "About" },
+  { href: "/our-story", label: "Our Story" },
   { href: "#categories", label: "Categories" },
   { href: "#featured", label: "Shop" },
   { href: "#care", label: "Care" },

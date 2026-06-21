@@ -50,7 +50,7 @@ export function Footer() {
             { label: "WhatsApp", href: "#contact" },
             { label: "Call us", href: "#contact" },
             { label: "Visit nursery", href: "#contact" },
-            { label: "Email", href: "mailto:hello@leafandbloom.in" },
+            { label: "Email", href: "mailto:msniketha1211@gmail.com" },
           ]}
         />
       </div>
@@ -65,13 +65,7 @@ export function Footer() {
   );
 }
 
-function FooterCol({
-  title,
-  links,
-}: {
-  title: string;
-  links: { label: string; href: string }[];
-}) {
+function FooterCol({ title, links }: { title: string; links: { label: string; href: string }[] }) {
   return (
     <div>
       <div className="text-sm font-semibold uppercase tracking-wider text-white">{title}</div>

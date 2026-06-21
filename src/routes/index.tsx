@@ -22,8 +22,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Leaf & Bloom — Premium Plant Nursery" },
       {
         property: "og:description",
-        content:
-          "Handpicked indoor, outdoor, flowering plants and succulents. Order on WhatsApp.",
+        content: "Handpicked indoor, outdoor, flowering plants and succulents. Order on WhatsApp.",
       },
     ],
     links: [
@@ -31,7 +30,7 @@ export const Route = createFileRoute("/")({
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap",
       },
     ],
   }),
