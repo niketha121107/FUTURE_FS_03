@@ -17,7 +17,6 @@ export function Footer() {
             A home-based nursery rooted in care. We grow, repot and deliver healthy plants for
             living rooms, balconies and quiet corners across India.
           </p>
-
         </div>
 
         <FooterCol
