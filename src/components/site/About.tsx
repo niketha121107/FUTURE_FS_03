@@ -1,6 +1,5 @@
 import about from "@/assets/about.jpg";
 import { Leaf, Droplets, Heart } from "lucide-react";
-import { Categories } from "@/components/site/Categories";
 
 export function About() {
   return (
@@ -91,8 +90,7 @@ export function About() {
         </div>
       </section>
 
-      {/* Categories Section */}
-      <Categories />
+
     </>
   );
 }
