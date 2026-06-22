@@ -1,4 +1,4 @@
-import { Leaf, Instagram, Facebook } from "lucide-react";
+import { Leaf } from "lucide-react";
 
 export function Footer() {
   return (
@@ -17,22 +17,7 @@ export function Footer() {
             A home-based nursery rooted in care. We grow, repot and deliver healthy plants for
             living rooms, balconies and quiet corners across India.
           </p>
-          <div className="mt-6 flex gap-3">
-            <a
-              href="#"
-              className="grid h-10 w-10 place-items-center rounded-full glass-dark hover:bg-white/15"
-              aria-label="Instagram"
-            >
-              <Instagram className="h-4 w-4" />
-            </a>
-            <a
-              href="#"
-              className="grid h-10 w-10 place-items-center rounded-full glass-dark hover:bg-white/15"
-              aria-label="Facebook"
-            >
-              <Facebook className="h-4 w-4" />
-            </a>
-          </div>
+
         </div>
 
         <FooterCol
