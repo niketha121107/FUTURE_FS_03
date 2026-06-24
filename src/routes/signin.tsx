@@ -49,7 +49,9 @@ function SignIn() {
     }
 
     setError("");
-    const { error: resetError } = await supabase.auth.resetPasswordForEmail(trimmed);
+    const { error: resetError } = await supabase.auth.resetPasswordForEmail(trimmed, {
+      redirectTo: "http://localhost:8080/auth/callback",
+    });
 
     if (resetError) {
       setError(resetError.message);
@@ -73,7 +75,7 @@ function SignIn() {
 
       <Link
         to="/"
-        className="group fixed left-6 top-6 z-10 flex items-center gap-2 rounded-full bg-card/70 px-4 py-2 text-sm font-medium text-muted-foreground shadow-soft backdrop-blur-sm transition-all hover:bg-card hover:text-foreground"
+        className="group fixed left-6 top-6 z-50 flex items-center gap-2 rounded-full bg-card/70 px-4 py-2 text-sm font-medium text-muted-foreground shadow-soft backdrop-blur-sm transition-all hover:bg-card hover:text-foreground"
       >
         <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-0.5" />
         Back to home

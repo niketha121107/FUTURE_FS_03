@@ -50,7 +50,10 @@ function SignUp() {
       email,
       password,
       options: {
-        data: { full_name: trimmedName },
+        emailRedirectTo: "http://localhost:8080/auth/callback",
+        data: {
+          full_name: trimmedName,
+        },
       },
     });
 
