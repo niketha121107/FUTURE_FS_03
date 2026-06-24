@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
+      { title: "Leaf & Bloom | Premium Plant Nursery" },
       {
         name: "description",
         content:
           "A modern, elegant website for a plant nursery, showcasing plants and facilitating WhatsApp orders.",
       },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
+      { name: "author", content: "Leaf & Bloom" },
+      { property: "og:title", content: "Leaf & Bloom | Premium Plant Nursery" },
       {
         property: "og:description",
         content:
@@ -92,8 +92,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Lovable App" },
+      { name: "twitter:site", content: "@LeafAndBloom" },
+      { name: "twitter:title", content: "Leaf & Bloom | Premium Plant Nursery" },
       {
         name: "twitter:description",
         content:
