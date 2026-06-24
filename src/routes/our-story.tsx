@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { Leaf, Heart, Sprout, Users, ArrowRight, Award, TreePine } from "lucide-react";
+import howItStarted from "@/assets/how-it-started.png";
 
 const fadeUp = {
   initial: { opacity: 0, y: 40 },
@@ -42,11 +43,15 @@ function OurStory() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-[#C4845A]/30 bg-gradient-to-br from-[#C4845A]/20 to-[#D4A853]/10 shadow-[0_0_30px_rgba(196,132,90,0.1)]"
+            className="relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-[#C4845A]/30 shadow-[0_0_30px_rgba(196,132,90,0.1)]"
           >
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Sprout className="h-32 w-32 text-[#C4845A]/30" />
-            </div>
+            <img
+              src={howItStarted}
+              alt="A cozy apartment balcony garden with houseplants basking in warm sunlight"
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 rounded-[2rem] ring-1 ring-inset ring-[#C4845A]/10" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 40 }}
